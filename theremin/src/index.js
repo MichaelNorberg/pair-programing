@@ -15,6 +15,10 @@ let height = window.innerHeight;
 let maxFreq = 3000;
 let maxVol = 0.02;
 
+
+
+
+
 ReactDOM.render(<App oscillator={oscillator} 
                      gain={gain} 
                      output={output} 
