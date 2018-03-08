@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 class Mute extends React.Component {
     render() {
@@ -6,8 +6,8 @@ class Mute extends React.Component {
             <div>
                 <button onClick={this.props.changeMuteState}>mute</button>
             </div>
-        )
-    }
-}
+        );
+    };
+};
 
 export default Mute;
