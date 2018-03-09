@@ -3,6 +3,9 @@ import './App.css';
 import Mute from './Mute.js'
 import WaveSelector from './WaveSelector.js'
 
+
+
+
 class App extends Component {
   constructor() {
     super()
@@ -92,11 +95,14 @@ class App extends Component {
     let thereminStyle = {
       height: "100vh",
     };
+
     return (
       <div style={thereminStyle}>
+      <WaveSelector changeWaveform={this.changeWaveform}/> 
+      <Mute changeMuteState={this.changeMuteState}/>
         <canvas id="canvas"></canvas>
-        <Mute changeMuteState={this.changeMuteState}/>
-        <WaveSelector changeWaveform={this.changeWaveform}/> 
+       
+
       </div>
     );
   };
